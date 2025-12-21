@@ -59,6 +59,8 @@ img{
     padding: 0 20px;
 }
 
+
+
 /*navbar*/
 header{
     position: fixed;
@@ -167,6 +169,26 @@ header .navbar{
     margin-right: 30px;
 }
 
+/*about section*/
+.about-section {
+    padding: 120px 0;
+    background: var(--light-pink-color);
+}
+
+.about-section .section-content{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-section .about-image-wrapper .about-image {
+    width: 1920px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: var(--border-radius-circle);
+}
+
 @media screen and (max-width: 900px){
     :root {
         --font-size-n: 1rem;
@@ -226,5 +248,26 @@ header .navbar{
         margin-top: 17px;
         display: block;
         font-size: var(--font-size-l);
+    }
+
+    .hero-section .section-content{
+        gap: 50px;
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 30px 20px 20px;
+        justify-content: center;
+    }
+
+    .hero-section.hero-details :is(.subtitle , .description){
+        max-width: 100%;
+    }
+
+    .hero-section .hero-details .buttons{
+        justify-content: center;
+    }
+
+    .hero-section .hero-image-wrapper{
+        margin-right: 0;
+        max-width: 270px;
     }
 }
