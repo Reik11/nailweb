@@ -59,7 +59,23 @@ img{
     padding: 0 20px;
 }
 
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: var(--font-size-xl);
+}
 
+.section-title::after{
+    content: '';
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-raedius: var(--border-radius-s);
+    background: var(--secondary-color);
+
+}
 
 /*navbar*/
 header{
@@ -161,7 +177,7 @@ header .navbar{
 .hero-section .hero-details .contact-us:hover{
     color: var(--primary-color);
     border-color: var(--secondary-color);
-    background: transparent;
+    background: var(--secondary-color);
 }
 
 .hero-section .hero-image-wrapper{
@@ -187,6 +203,37 @@ header .navbar{
     height: 400px;
     object-fit: cover;
     border-radius: var(--border-radius-circle);
+}
+
+.about-section .about-details .section-title{
+    padding: 0;
+}
+
+.about-section .about-details {
+    min-width: 50%;
+}
+
+.about-section .about-details .text{
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: var(--font-size-m);
+}
+
+.about-section .social-link-list{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link {
+    color: var(--primary-color);
+    font-size: var(--font-size-l);
+    transition: 0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover {
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 900px){
